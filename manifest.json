@@ -1,0 +1,52 @@
+{
+  "manifestVersion": 1,
+  "name": "UniverCincinatiFeed",
+  "description": "http://ccuniversity.edu/admissions/feed/",
+  "version": 1,
+  "versionString": "1",
+  "author": "Swat Yadav",
+  "organization": "",
+  "contactEmail": "",
+  "tileIcon": {
+    "46": "icons/tileIcon.png"
+  },
+  "badgeIcon": {
+    "24": "icons/badgeIcon.png"
+  },
+  "icons": {},
+  "refreshIntervalMinutes": 30,
+  "tileTheme": {
+    "base": "d94c66",
+    "highlight": "ea5475",
+    "lowlight": "c64763",
+    "secondary": "a3919c",
+    "highContrast": "bf455f",
+    "muted": "993344"
+  },
+  "resources": [
+    {
+      "url": "http://ccuniversity.edu/admissions/feed/",
+      "style": "Feed",
+      "content": {
+        "_1_rsschanneltitle": "/rss/channel/title",
+        "_1_rsschannellink": "/rss/channel/link"
+      }
+    }
+  ],
+  "pages": [
+    {
+      "layout": "MSBand_ScrollingText",
+      "condition": "true",
+      "textBindings": [
+        {
+          "elementId": "1",
+          "value": "{{_1_rsschanneltitle}}"
+        },
+        {
+          "elementId": "2",
+          "value": "{{_1_rsschannellink}}"
+        }
+      ]
+    }
+  ]
+}
